@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'React Barcamp Cologne',
   },
   plugins: ['gatsby-plugin-react-helmet'],
 }
