@@ -8,28 +8,11 @@ import DomCologne from '../pages/DomCologne.png'
 const exampleParallaxData = [
   {
     start: '.header',
-    duration: '30vh',
-    properties: [
-      {
-        startValue: 0,
-        endValue: -50,
-        unit: 'vh',
-        property: 'translateY',
-      },
-      {
-        startValue: 0,
-        endValue: 1,
-        property: 'opacity',
-      },
-    ],
-  },
-  {
-    start: '.header',
     startOffset: '60vh',
     duration: '30vh',
     properties: [
       {
-        startValue: -50,
+        startValue: 0,
         endValue: -100,
         unit: 'vh',
         property: 'translateY',
@@ -79,7 +62,6 @@ const Header = ({ siteTitle }) => (
         padding: '10%',
       }}
     >
-      <h2>hi world</h2>
       <h1 style={{ fontSize: '4.25rem' }}>
         React Barcamp&nbsp;
         <span style={{ fontWeight: '100' }}>2019</span>
