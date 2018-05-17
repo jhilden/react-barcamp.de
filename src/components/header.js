@@ -7,75 +7,40 @@ import DomCologne from '../pages/DomCologne.png'
 
 const exampleParallaxData = [
   {
-    start: 0,
-    end: 300,
+    start: '.header',
+    duration: '30vh',
     properties: [
       {
         startValue: 0,
-        endValue: 90,
-        property: "rotate"
-      },
-      {
-        startValue: 1,
-        endValue: 1.5,
-        property: "scale"
-      },
-      {
-        startValue: 1,
-        endValue: 0.75,
-        property: "opacity"
-      }
-    ]
-  },
-  {
-    start: 350,
-    duration: 300,
-    properties: [
-      {
-        startValue: "#3cb99c",
-        endValue: "rgba(50,50,200,0.8)",
-        property: "backgroundColor"
+        endValue: -50,
+        unit: 'vh',
+        property: 'translateY',
       },
       {
         startValue: 0,
-        endValue: 100,
-        property: "translateY"
-      },
-      {
-        startValue: 0.75,
         endValue: 1,
-        property: "opacity"
-      }
-    ]
+        property: 'opacity',
+      },
+    ],
   },
   {
-    start: 700,
-    duration: 1000,
+    start: '.header',
+    startOffset: '60vh',
+    duration: '30vh',
     properties: [
       {
-        startValue: 100,
+        startValue: -50,
+        endValue: -100,
+        unit: 'vh',
+        property: 'translateY',
+      },
+      {
+        startValue: 1,
         endValue: 0,
-        property: "translateY"
+        property: 'opacity',
       },
-      {
-        startValue: 1.5,
-        endValue: 2,
-        property: "scale"
-      },
-      {
-        startValue: 90,
-        endValue: 0,
-        property: "rotate"
-      },
-      // Blur is not performant
-      // Used just as an example for CSS filters
-      {
-        startValue: 0,
-        endValue: 2,
-        property: "blur"
-      }
-    ]
-  }
+    ],
+  },
 ];
 
 
@@ -96,19 +61,16 @@ const styles = {
 
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      width: '100%',
-      height: '100vh',
-      backgroundImage: `url(${DomCologne})`,
-      color: 'white',
-    }}
-  >
     <Plx
-      className="MyAwesomeParallax"
       parallaxData={exampleParallaxData}
-      style={styles}
-    />
+      className="header"
+      style={{
+        width: '100%',
+        height: '100vh',
+        backgroundImage: `url(${DomCologne})`,
+        color: 'white',
+      }}
+    >
     <div
       style={{
         width: '100%',
@@ -117,6 +79,7 @@ const Header = ({ siteTitle }) => (
         padding: '10%',
       }}
     >
+      <h2>hi world</h2>
       <h1 style={{ fontSize: '4.25rem' }}>
         React Barcamp&nbsp;
         <span style={{ fontWeight: '100' }}>2019</span>
@@ -138,7 +101,7 @@ const Header = ({ siteTitle }) => (
         </button>
       </p>
     </div>
-  </div>
+  </Plx>
 )
 
 export default Header
