@@ -6,6 +6,7 @@ import KitconceptLogo from './kitconcept.svg'
 
 const IndexPage = () => (
   <div>
+    {/*
     <div>
       <h3>Sponsors & Partners</h3>
       <button>Become a sponsor</button>
@@ -33,6 +34,7 @@ const IndexPage = () => (
         <img src={KitconceptLogo} alt="kitconcept GmbH" />
       </div>
     </div>
+    */}
   </div>
 )
 
