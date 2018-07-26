@@ -28,18 +28,18 @@ const Header = ({ siteTitle }) => (
           width: '100%',
           height: '80vh',
           margin: '0 auto',
-          padding: '10%',
+          padding: '5%',
         }}
       >
         <h1 style={{
               fontFamily: 'Helvetica Neue',
               fontSize: '6.25rem',
               textTransform: 'uppercase',
-              fontWeight: '200',
+              fontWeight: '400',
               letterSpacing: '5px',
               paddingBottom: '0.5em',
             }}>
-          React Barcamp&nbsp;
+          React BarCamp
           <sup style={{
             fontWeight: '100',
             fontSize: '0.59em',
