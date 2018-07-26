@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'React Barcamp Cologne',
+    title: 'React BarCamp Cologne',
   },
-  plugins: ['gatsby-plugin-react-helmet'],
-  pathPrefix: `/react-barcamp.de`,
+  plugins: ['gatsby-plugin-react-helmet']
 }
